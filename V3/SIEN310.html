@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <!-- Upperpart ba500-ba510 -->
-    <!-- Upperpart text ba511-ba520 -->
+    <!-- Upperpart text ba511-ba515 -->
     <head>
         <title>IT Pirates</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,19 +9,32 @@
 
     <body>
         <div class="ba500">
-            <ul>
+            <ul class="d-block">
                 <li class="ba502">Home</li>
                 <li class="ba502 d-none d-md-block"><i class="fa fa-user"></i>  About</li>
                 <li class="ba502 d-none d-md-block"><i class="fa fa-th"></i>  Portfolio</li>
                 <li class="ba502 d-none d-md-block"><i class="fa fa-envelope"></i>  Contact</li>
                 <li class="ba508 d-none d-md-block"><i class="fa fa-search"></i></li>
-                <li class="ba505 d-block d-md-none"><i class="fa fa-bars"></i></li>
+                <li class="ba505 d-block d-md-none" onclick="bars()"><i class="fa fa-bars"></i></li>
             </ul>
-            <div class="ba506">
-                <p class="ba507 d-flex justify-content-center">
-                <span class="ba509">My</span> 
-                <span class="ba509 d-none d-md-inline">Website</span>
-                <span class="ba509">Logo</span> </p>
+            <div id="ba510">
+                <p class="ba504">About</p>
+                <p class="ba504">Portfolio</p>
+                <p class="ba504">Contact</p>
+                <p class="ba504">Search</p>
+            </div>            
+            <div class="ba506 container-fluid">
+                <div class="row d-flex flex-row">
+                    <div class="col-4"></div>
+                    <div class="col-4 ba507 d-flex justify-content-center">
+                        <p>
+                            <span class="ba509">My </span> 
+                            <span class="ba509 d-none d-md-inline"> Website</span>
+                            <span class="ba509"> Logo</span>
+                        </p>
+                    </div>
+                    <div class="col-4"></div>
+                    </div>
             </div>
         </div>
         <div class="ba511 container-fluid">
@@ -32,7 +45,6 @@
                 </div>
                 <div class="col-4"></div>
             </div>
-
         </div>
         <div class="ba513 container-fluid">
             <div class="row d-flex flex-row">
@@ -60,6 +72,16 @@
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <link rel="stylesheet" href="SIEN310.css">
     </div>
+    <script>
+        function bars(){
+            var x = document.getElementById("ba510");
+            if (x.style.display === "inline") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "inline";
+            }
+        }
+    </script>
 
 
 </html>

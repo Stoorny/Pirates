@@ -32,6 +32,10 @@ li{
     background-color: grey;
     transition-duration: 300ms;
 }
+.ba504{
+    font-size: 14px;
+    margin-top: 6px;
+}
 .ba505{
     font-size: 14px;
     padding: 11px;
@@ -44,7 +48,7 @@ li{
     transition-duration: 300ms;
 }
 .ba506{
-    padding-top: 125px;
+    padding-top: 175px;
     position: static;
 }
 .ba507{
@@ -72,8 +76,13 @@ li{
     transition-duration: 300ms;
     justify-content: end;
 }
-.ba510{
-    padding-top:125px
+#ba510{
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    margin-top: 40px;
+    padding-left: 10px;
+    display: none;
 }
 .ba511{
     margin-top: 80px;
