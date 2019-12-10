@@ -9,7 +9,7 @@
 
     <body>
         <div class="ba500">
-            <ul class="d-block">
+            <ul id="ba503" class="d-block">
                 <li class="ba502">Home</li>
                 <li class="ba502 d-none d-md-block"><i class="fa fa-user"></i>  About</li>
                 <li class="ba502 d-none d-md-block"><i class="fa fa-th"></i>  Portfolio</li>
@@ -79,6 +79,15 @@
                 x.style.display = "none";
             } else {
                 x.style.display = "inline";
+            }
+        }
+        var y = document.getElementById("ba503");
+        window.onscroll = function(){navbar()};
+        function navbar(){
+            if (window.pageYOffset >= 300) {
+                y.classList.add("ba501");       
+            } else {
+                y.classList.remove("ba501");
             }
         }
     </script>

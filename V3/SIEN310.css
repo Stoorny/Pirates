@@ -12,6 +12,26 @@ ul{
 li{
     float: left;
 }
+@keyframes slideUp {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+@-webkit-keyframes slideUp {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+}
 .ba500{
     background-image: url(https://w3schools.com/w3images/parallax1.jpg);
     height: 400px;
@@ -21,12 +41,21 @@ li{
     opacity: 75%;
     position: static;
 }
+.ba501{
+    background-color: white;
+    width: 100%;
+    animation-name: slideUp;
+    -webkit-animation-name: slideUp;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    visibility: visible;
+}
 .ba502{
     text-transform: uppercase;
     font-size: 14px;
     letter-spacing: 1px;
     padding: 11px;
-    display: inline;
+    display: inline-block;
 }
 .ba502:hover{
     background-color: grey;
