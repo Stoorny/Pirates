@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!-- Upperpart ba500-ba510 -->
-    <!-- Upperpart text ba511-ba515 -->
+    <!-- Upperpart ba500-ba520-->
     <head>
         <title>IT Pirates</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,18 +9,19 @@
     <body>
         <div class="ba500">
             <ul id="ba503" class="d-block">
-                <li class="ba502">Home</li>
-                <li class="ba502 d-none d-md-block"><i class="fa fa-user"></i>  About</li>
+                <li class="ba502" onclick="b1()">Home</li>
+                <li class="ba502 d-none d-md-block" onclick="b2()"><i class="fa fa-user"></i>  About</li>
                 <li class="ba502 d-none d-md-block"><i class="fa fa-th"></i>  Portfolio</li>
                 <li class="ba502 d-none d-md-block"><i class="fa fa-envelope"></i>  Contact</li>
-                <li class="ba508 d-none d-md-block"><i class="fa fa-search"></i></li>
+                <li class="ba508 d-none d-md-block" onclick="b0()"><i class="fa fa-search"></i></li>
                 <li class="ba505 d-block d-md-none" onclick="bars()"><i class="fa fa-bars"></i></li>
+                <li class="ba516"><input id="ba516" type="text" placeholder="Search.."></li>
             </ul>
             <div id="ba510">
-                <p class="ba504">About</p>
+                <p class="ba504" onclick="b2()">About</p>
                 <p class="ba504">Portfolio</p>
                 <p class="ba504">Contact</p>
-                <p class="ba504">Search</p>
+                <p class="ba504" onclick="b0()">Search</p>
             </div>            
             <div class="ba506 container-fluid">
                 <div class="row d-flex flex-row">
@@ -41,7 +41,7 @@
             <div class="row d-flex flex-row">
                 <div class="col-4"></div>
                 <div class="col-4 d-flex justify-content-center">
-                    <h3 class="ba512">About Me</h3>
+                    <h3 id="ba512" class="ba512">About Me</h3>
                 </div>
                 <div class="col-4"></div>
             </div>
@@ -88,6 +88,19 @@
                 y.classList.add("ba501");       
             } else {
                 y.classList.remove("ba501");
+            }
+        }
+        function b1(){
+            scrollTo(0,0);
+        }
+        function b2(){
+            document.getElementById("ba512").scrollIntoView();
+        }
+        function b0(){
+            if (document.getElementById("ba516").style.display === "inline") {
+                document.getElementById("ba516").style.display = "none";
+            } else {
+                document.getElementById("ba516").style.display = "inline";
             }
         }
     </script>

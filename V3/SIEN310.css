@@ -1,5 +1,6 @@
 html{
     font-family:Verdana,sans-serif;
+    scroll-behavior: smooth;
 }
 ul{
     list-style-type: none;
@@ -46,8 +47,8 @@ li{
     width: 100%;
     animation-name: slideUp;
     -webkit-animation-name: slideUp;
-    animation-duration: 2s;
-    -webkit-animation-duration: 2s;
+    animation-duration: 800ms;
+    -webkit-animation-duration: 800ms;
     visibility: visible;
 }
 .ba502{
@@ -79,6 +80,7 @@ li{
 .ba506{
     padding-top: 175px;
     position: static;
+    pointer-events: none;
 }
 .ba507{
     font-size: 20px;
@@ -115,6 +117,7 @@ li{
 }
 .ba511{
     margin-top: 80px;
+    pointer-events: none;
 }
 .ba512{
     display: inline;
@@ -122,6 +125,7 @@ li{
     color: #777777;
     font-size: 24px;
     font-family: sans-serif;
+    pointer-events: none;
 }
 .ba514{
     display: inline-block;
@@ -136,4 +140,12 @@ li{
     margin: 15px;
     font-family: sans-serif;
     color: #777777;
+}
+.ba516{
+    font-size: 14px;
+    padding: 11px;
+    float: right;
+}
+#ba516{
+    display: none;
 }
