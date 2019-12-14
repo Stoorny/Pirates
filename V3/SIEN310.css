@@ -187,3 +187,29 @@ li{
     letter-spacing: 9px;
     color: #777777;
 }
+.ba532{
+    background-color: rgb(36, 33, 33);
+    color: white;
+    font-size: large;
+    text-align: center;
+}
+.ba533{
+    padding: 20px;
+}
+.ba534{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRDkyVj5Yp4T2VITQWPUXI15gcA88i_k9RDWdVWjXRKx2prdZ2n);
+    height: 400px;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 75%;
+    position: static;
+    justify-content: center;
+}
+.ba535{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 9px;
+}
