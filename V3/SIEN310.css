@@ -9,27 +9,25 @@ ul{
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1;
 }
 li{
     float: left;
 }  
 @keyframes slideUp {
     0% {
-      opacity: 0;
       -webkit-transform: translateY(70%);
     } 
     100% {
-      opacity: 1;
       -webkit-transform: translateY(0%);
     }
   }
 @-webkit-keyframes slideUp {
     0% {
-      opacity: 0;
       -webkit-transform: translateY(70%);
     } 
     100% {
-      opacity: 1;
+      opacity: 100%;
       -webkit-transform: translateY(0%);
     }
 }
@@ -49,7 +47,6 @@ li{
     -webkit-animation-name: slideUp;
     animation-duration: 800ms;
     -webkit-animation-duration: 800ms;
-    visibility: visible;
 }
 .ba502{
     text-transform: uppercase;
@@ -63,7 +60,8 @@ li{
     transition-duration: 300ms;
 }
 .ba503{
-    z-index: 500;
+    z-index: 1;
+    pointer-events: all;
 }
 .ba504{
     font-size: 14px;
@@ -141,10 +139,11 @@ li{
     pointer-events: none;
 }
 .ba515{
-    margin: 15px;
     font-family: sans-serif;
     color: #777777;
     pointer-events: none;
+    width: 80%;
+    margin: auto;
 }
 .ba516{
     font-size: 14px;
@@ -154,15 +153,37 @@ li{
 #ba516{
     display: none;
 }
+.ba520{
+    padding: 40px;
+    z-index: -1;
+}
 .ba521{
     text-align: center;
+    z-index: -1;
 }
 .ba522{
     position: sticky;
     z-index: -1;
+    opacity: 0.7;
+}
+.ba522:hover{
+    opacity: 1;
 }
 .ba523{
     font-size: 20px;
     padding: 15px;
     margin-top: 15px;
+}
+.ba526{
+    padding: 40px;
+}
+.ba527{
+    text-align: center;
+    color: #777777;
+    font-size: 20px;
+}
+.ba528{
+    font-size: 15px;
+    letter-spacing: 9px;
+    color: #777777;
 }
