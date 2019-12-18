@@ -212,4 +212,142 @@ li{
     font-size: 40px;
     text-transform: uppercase;
     letter-spacing: 9px;
+    padding-top:200px;
 }
+
+* {
+    box-sizing: border-box;
+  }
+
+
+body {
+   
+    margin: auto;
+    font-family: 'Lato', sans-serif;
+}
+.work-container {
+    padding: 60px 15px;
+    color: #777777;
+
+}
+.work-container p{
+    font-style: italic;
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+.work-container img {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 0px 15px;
+}
+.work-container img:hover{
+    opacity: .6;
+    cursor: pointer;
+}
+.work-container button {
+    position: relative;
+    padding: 10px 20px;
+    background-color: #f1f1f1;
+    color: #000;
+    margin-top: 50px;
+    border-radius: 0%;
+    
+}
+.work-container button:hover {
+    background-color: #cccccc;
+}
+
+
+.contact-container p {
+    position: relative;
+    text-align: center;
+    color: #ffff;
+    font-size: 36px;
+    letter-spacing: 10px;
+    top: 50%;
+}
+.contact-container {
+    background-image: url("/photos/parallax3.jpg");
+    height: 400px;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    background-size: cover;
+
+ 
+}
+ .feedback-container {
+     padding: 60px 15px;
+     color: #777777;
+
+ }
+
+
+ .para{
+    font-style: italic;
+    font-size: 15px;
+    margin-bottom: 50px;
+
+ }
+
+ .feedback-container img{
+     width: 100%;
+     height: auto;
+     border-radius: 5px;
+ }
+
+ .feedback-container i{
+     margin-right: 15px;
+     display: inline-block;
+ }
+
+ .feedback-container i:hover {
+  color: #000;
+}
+
+.map-txt{
+    font-size: 20px;
+    padding: 0px 0px 5px;
+    margin: 0px;
+    display: inline-block;
+
+}
+
+.feedback-container input{
+    margin-bottom: 8px;
+    padding: 8px;
+    height: 50px;
+    border-radius: 0px;
+}
+
+.feedback-container button{
+    color:white;
+    background-color: black;
+    border-radius: 0px;
+    float: right;
+    padding: 10px 15px;
+    margin: 15px 0px;
+}
+.feedback-container button:hover{
+    background-color: #cccccc;
+}
+.footer-container{
+    background-color:black;
+    opacity: 0.6;
+    padding: 64px;
+}
+.footer-container:hover{
+    opacity: 1;
+}
+.footer-container a{
+    background-color: #f1f1f1;
+    padding: 10px 20px;
+    border-radius: 0%;
+    margin-left: 45%;
+
+}
+ .icone{ 
+    color: white;
+    text-align: center;
+    margin: 15px 0px;
+ }
