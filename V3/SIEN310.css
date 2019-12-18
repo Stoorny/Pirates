@@ -342,7 +342,6 @@ body {
 .footer-container a{
     background-color: #f1f1f1;
     border-radius: 0%;
-    margin-left: 45%;
 
 }
  .icone{ 
@@ -354,4 +353,13 @@ body {
      text-align: center;
      white-space: nowrap;
      display: inline-block;
+ }
+ .btn{
+     margin: 0;
+ }
+ .btn-default{
+     margin: 0;
+ }
+ a{
+     margin: 0;
  }
