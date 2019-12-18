@@ -341,7 +341,6 @@ body {
 }
 .footer-container a{
     background-color: #f1f1f1;
-    padding: 10px 20px;
     border-radius: 0%;
     margin-left: 45%;
 
@@ -350,4 +349,9 @@ body {
     color: white;
     text-align: center;
     margin: 15px 0px;
+ }
+ .ba5000{
+     text-align: center;
+     white-space: nowrap;
+     display: inline-block;
  }
