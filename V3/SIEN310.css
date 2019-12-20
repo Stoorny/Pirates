@@ -349,6 +349,13 @@ body {
     color: white;
     text-align: center;
     margin: 15px 0px;
+    padding: 18px 2px;
+ }
+ 
+ .footer-container p{
+     padding: 15px 0px;
+     font-size: 15px;
+     color:white;
  }
  .ba5000{
      text-align: center;
